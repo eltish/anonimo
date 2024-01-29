@@ -18,6 +18,7 @@ Los libros son nuestro producto principal donde puedes encontrar diversos genero
 **Aldair Becerra**
 
 **Alfredo Kentish**
+Tecnico en Soporte de Software, me caracterisco por ser una persona sociable y empatica en requerimentos de trabajo responsable, atento, eficiente. captura mi interes la tecnologia en todos los ambitos como online u offline.
 
 **Keyla Kelly**
 
