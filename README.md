@@ -4,7 +4,7 @@ Librería Anonymous es una tienda virtual que se dedica a la venta de libros y d
 
 
 ## _Audiencia Objetiva_
-es una librería para los amantes de la lectura:
+Es una librería para los amantes de la lectura:
 Diversidad de generos y temas para tener una amplia variedad de libros estos incluyen, literatura clásica, comtemporanea, no ficción, generos específicos, libros para niños entre otros.
 
 
