@@ -21,6 +21,8 @@ Los libros son nuestro producto principal donde puedes encontrar diversos genero
 
 **Keyla Kelly**
 
+Licenciada en Gerencia de Comercio Electrónico, soy una persona organizada, práctica, responsable y muy curiosa en base a lo relacionado con las nuevas tendencias tecnológicas. Me gusta todo lo relacionado con la distribucción logística de la compra y venta de productos o servicios online.
+
 **Sachanys Baker**
 
 
