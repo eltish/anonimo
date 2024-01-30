@@ -16,6 +16,7 @@ Los libros son nuestro producto principal donde puedes encontrar diversos genero
 ## _Equipo de Trabajo_
 
 **Aldair Becerra**
+Hola!! Soy Aldair Becerra, de 28 años, Diseño Grafico es lo mio!, tengo un emprendimiento de articulos promocionales o personalizados, me gusta proponerme retos, y la programacion para mi es un reto mas, quiero, me gusta y le dedicaré el tiempo que sea necesario para estudiarlo!!.
 
 **Alfredo Kentish**
 Tecnico en Soporte de Software, me caracterisco por ser una persona sociable y empatica en requerimentos de trabajo responsable, atento, eficiente. captura mi interes la tecnologia en todos los ambitos como online u offline.
