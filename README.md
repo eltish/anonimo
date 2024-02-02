@@ -52,6 +52,11 @@ Licenciada en Gerencia de Comercio Electrónico, soy una persona organizada, pr�
 
 Mi nombre es Sachanys Baker, tengo 24 años, culminé mis estudios en Licenciatura en Ingenieria de Operación y logística Empresarial. Soy una persona con muchos intereses, me considero creativa, ingeniosa y autónoma. Mi interés por la programación viene por mi pasión al arte, diseño, fotografía y la creación, enfocado a la animación digital y sus diversas áreas específicamente cine, videojuegos. 
 
+**Alejandro Arroyo**
+
+
+
+
 ## _Referencias_
 
 * _[Powell's Book](https://www.powells.com/)_
