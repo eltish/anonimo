@@ -54,7 +54,8 @@ Mi nombre es Sachanys Baker, tengo 24 años, culminé mis estudios en Licenciatu
 
 **Alejandro Arroyo**
 
-
+## _LINK DE WIREFRAMES_
+* _[Wireframes](https://www.figma.com/file/NsQOQMN9snKOodIKajCUJy/Librer%C3%ADa-Anonymous?type=design&t=cXySBVBcvUUmxCkX-6)_
 
 
 ## _Referencias_
