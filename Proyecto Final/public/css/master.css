@@ -205,6 +205,114 @@ article a {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
 }
 
+
+/* ########################### ESTILOS PARA EL DETALLE DEL PRODUCTO ########################### */
+.detalleDelProducto {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+
+}
+
+.imagenLibro {
+float: left;
+background-color: white;
+align-items: center;
+opacity: 0.8;
+border-radius: 5em;
+margin-left: 15px;
+margin-top: 20px;
+margin-right: 50px;
+padding: 50px;
+bottom:20px;
+}
+
+.informacion {
+margin-left: 100px; /* Espacio entre la imagen y la información */
+margin-top: 60px;
+text-align: left;
+padding: 35px ;
+
+}
+
+
+
+.tituloDelLibro{
+font-size: 40px;
+text-decoration: underline;
+font-style: italic;
+}
+
+.subTituloLibro, .subMetodoEnvio{
+font-size: 20px;
+
+}
+
+.textoInfoLibro, .textoMetodoEnvio{
+text-align: justify;
+padding: 0px 50px 25px 0px;
+line-height: 1.5;
+margin-top: 2px;
+}
+
+
+
+button {
+padding: 12.5px 30px;
+border: 0;
+border-radius: 100px;
+background-color: #2ba8fb;
+color: #ffffff;
+font-weight: Bold;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+position: relative;
+align-items: center;
+}
+
+button:hover {
+background-color: #711cc1;
+border: 1px solid #ffffff;
+box-shadow: 0 0 20px #6fc5ff50;
+transform: scale(1.1);
+}
+
+button:active {
+background-color: #3d94cf;
+transition: all 0.25s;
+-webkit-transition: all 0.25s;
+box-shadow: none;
+transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*====== FOOTER ======*/
 
 footer {
