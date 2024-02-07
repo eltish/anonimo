@@ -63,6 +63,12 @@ Actualmente me dedico a estudiar y trabajar.
 * _[Wireframes](https://www.figma.com/file/NsQOQMN9snKOodIKajCUJy/Librer%C3%ADa-Anonymous?type=design&t=cXySBVBcvUUmxCkX-6)_
 
 
+
+## _LINK DE TRELLO_
+* _[Tablero Virtual - Trello](https://trello.com/b/OrgaEcIC/librer%C3%ADa-anonymous)_
+
+
+
 ## _Referencias_
 
 * _[Powell's Book](https://www.powells.com/)_
