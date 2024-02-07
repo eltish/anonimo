@@ -53,6 +53,9 @@ Licenciada en Gerencia de Comercio Electrónico, soy una persona organizada, pr�
 Mi nombre es Sachanys Baker, tengo 24 años, culminé mis estudios en Licenciatura en Ingenieria de Operación y logística Empresarial. Soy una persona con muchos intereses, me considero creativa, ingeniosa y autónoma. Mi interés por la programación viene por mi pasión al arte, diseño, fotografía y la creación, enfocado a la animación digital y sus diversas áreas específicamente cine, videojuegos. 
 
 **Alejandro Arroyo**
+Mi nombre Alejandro Arroyo, tengo 19 años, me gradue del bachillerato de turismo y estuve estudiando una licenciatura en Administracion publica Aduanera, amo los gatos,tengo un gato que se llama Konnor. me considero alguien Leal, comprensivo y puro de corazon :D
+en mis tiempos libres me gusta salir a conocer nuevos lugares o simplemente ir con amigos a disfrutar una tarde en un buen lugar.
+Actualmente me dedico a estudiar y trabajar.
 
 ## _LINK DE WIREFRAMES_
 * _[Wireframes](https://www.figma.com/file/NsQOQMN9snKOodIKajCUJy/Librer%C3%ADa-Anonymous?type=design&t=cXySBVBcvUUmxCkX-6)_
