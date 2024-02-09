@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.containerDeRegistro {
+    width: 100%;
+    max-width: 100vh;
+    background-color: #D0D0D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content {
+    width: 100%;
+    max-width: 450%;
+    background-color: darkorchid;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
