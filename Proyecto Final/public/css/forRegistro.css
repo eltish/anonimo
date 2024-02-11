@@ -1,23 +1,122 @@
-* {
+*{
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, helvetica, sans-serif;
-    box-sizing: border-box;
-    text-decoration: none;
 }
-.containerDeRegistro {
-    width: 100%;
-    max-width: 100vh;
-    background-color: #D0D0D0;
+
+section {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.form-content {
+    align-items: center;
     width: 100%;
-    max-width: 450%;
-    background-color: darkorchid;
-    padding: 50px 60px 70px;
+    min-height: 100vh;
+    background-image: url(../images/5471985.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor{
+    position: relative;
+    width: 370px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor h1 {
+    font-size: 2.3rem;
+    color: azure;
     text-align: center;
-    border-radius: 25px;
+    position: relative;
+    top: -10px;
+}
+
+.input-contenedor {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 1px solid #fff;
+}
+
+.input-contenedor label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: lighter;
+    pointer-events: none;
+    transition: .6s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.input-contenedor input {
+    width: 99%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: - 35px 0 5px;
+    color: #fff;
+}
+
+.input-contenedor i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 3px;
+    right: 3px;
+}
+
+
+
+/*margin-left, tranform para centar boton, sin transition*/
+
+button {
+
+    margin-left: 50%;
+    transform: translate(-50%);
+
+    width: 70%;
+    height: 37px;
+    border-radius: 13px;
+    background: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.registrar {
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.registrar p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
 }
