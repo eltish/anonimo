@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+
+header a{
+    color: black;
+}
+
 
 /*================================= HEADER ===============================*/
 header {
@@ -212,6 +218,10 @@ article a {
     text-align: center;
     color: white;
     font-size: 25px;
+}
+
+.tituloPortada a{
+    color: white;
 }
 
 /*====================================== FOOTER ==============================================*/

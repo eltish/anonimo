@@ -23,6 +23,10 @@ header {
     
 }
 
+a{
+    color: black;
+}
+
 .logo {
     width: 100px; /* Tamaño del logo */
 }
