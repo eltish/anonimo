@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRITO DE COMPRA</title>
+    <link rel="stylesheet" href="../../public/css/carritoCompra.css">
+    <script src="https://kit.fontawesome.com/82af38c790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="barraDeNavegacion">
+            <div class="logo">
+                <img id="logo" src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa">
+            </div>
+            <div class="links">
+                <div class="inicio"><a href="./index.html"> Inicio </a></div>
+                <div class="libreria">Libreria</div>
+                <div class="contacto">Contacto</div>
+            </div>
+            <div class="barraBusqueda">
+                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar..." class="busqueda">
+
+            </div>
+            <div class="iconos">
+                <div class="carritoDeCompra">
+                    <div><a href="./productCart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="usuario">
+                    <div><a href="./login.html"><i class="fa-solid fa-user"></i></a></div>
+                </div>
+            </div>
+<br>
+<br>
+        </div>
+    </header>
+        <br>
+
+        <h1>CARRITO DE COMPRA</h1>
+        
+        <br>
+
+        <table class="tablaDeProductos">
+            <thead>
+                <tr>
+                    <th><h2>PRODUCTOS</h2></th>
+                    <th><h2>PRECIO</h2></th>
+                    <th><h2>CANTIDAD</h2></th>
+                    <th><h2>SUBTOTAL</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
+                    <td><h3>$16.00</h3></td>
+                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
+                    <td><h3>$16.00</h3></td>
+                </tr>
+                <tr>
+                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
+                    <td><h3>$20.00</h3></td>
+                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
+                    <td><h3>$20.00</h3></td>
+                </tr>
+                <tr>
+                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
+                    <td><h3>$60.00</h3></td>
+                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
+                    <td><h3>$60.00</h3></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        
+
+        <h5>
+        <p style="text-align: left;">Codigo Promocional.</p>
+        </h5>
+
+        <tabla class="tablaPromocional">
+            <thead>
+                <tr>
+                    <th>
+                    <p style="text-align: left;">
+                        <textarea name="texto" rows="1" cols="20"></textarea>
+                        <button>CANJEAR</button>
+                    </p>
+
+                    </th>
+                    <th>
+                    <p style="text-align: right;"> <td>SUBTOTAL</td> <td>$36.00</td>
+                    </p>
+                    </th>
+
+                    <th>
+                        <p style="text-align: right;"> <td>TOTAL</td> <td>$36.00</td>   
+                        </p>                    
+                    </th>
+
+                    <th>
+                        <p style="text-align: right;">
+                        <button>PAGAR</button>
+                        </p>
+                    </th>
+
+                </tr>
+            </thead>
+        </tabla>
+</body>
+</html>
