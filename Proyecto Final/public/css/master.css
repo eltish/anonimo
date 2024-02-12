@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -202,7 +203,7 @@ article a {
     background-color: #1C0B59;
     color: white;
     border-radius: 10px 10px 0px 0;
-    font-size: 8px;
+    font-size: 40px;
 }
 
 .tituloPortada {
@@ -210,7 +211,7 @@ article a {
     display: flex;
     text-align: center;
     color: white;
-    font-size: 8px;
+    font-size: 25px;
 }
 
 /*====================================== FOOTER ==============================================*/
@@ -271,7 +272,7 @@ footer ul li a {
 /*=============================================================================================================*/
 
 
-@media screen and (max-width: 834px) and (min-width: 320px){
+@media screen and (max-width: 834px) and (min-width: 320px) {
     .barraDeNavegacion {
         justify-content: space-around;
     }
@@ -323,7 +324,7 @@ footer ul li a {
 /*=============================================================================================================*/
 
 
-@media screen and (max-width: 1500px) and (min-width: 768px) {
+@media screen and (max-width: 3000px) and (min-width: 768px) {
     .barraDeNavegacion {
         padding: 0;
         justify-content: space-evenly;
@@ -331,11 +332,11 @@ footer ul li a {
 
     .logo {
         width: 10%;
-        height: 80px;
+        height: 100px;
     }
 
     #logo {
-        width: 100%;
+        width: 98%;
     }
 
     .links {
@@ -348,7 +349,7 @@ footer ul li a {
         background-color: #9A6CD9;
         cursor: pointer;
         padding: 10px 15px;
-        font-size: 19px;
+        font-size: 30px;
     }
 
     .iconos {
@@ -415,5 +416,17 @@ footer ul li a {
 
     aside li {
         text-decoration: none;
+    }
+
+    .cajaImagen {
+        width: 30%;
+    }
+
+    .tituloPortada {
+        font-size: 30px;
+        margin: 0;
+    }
+    footer ul {
+        font-size: 25px;
     }
 }
