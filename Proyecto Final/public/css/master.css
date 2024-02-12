@@ -1,158 +1,137 @@
-*{
-    text-decoration: none;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    display: block;
-    align-items: flex-start;
-    /* Establecer la imagen de fondo y ajustar su posición */
+
     background-image: url('../images/5471985.jpg');
     background-size: cover;
-    /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
     background-position: top;
-    /* Centra la imagen en el fondo */
     color: white;
-    /* Cambiar el color del texto a blanco */
     font-family: Arial, sans-serif;
-    /* Cambiar la fuente del texto */
-    text-align: center;
-    /* Centrar el texto */
-    padding: 5px;
-    /* Agregar relleno alrededor del contenido */
-box-sizing: border-box;
 }
 
-/*=== HEADER ===*/
+/*================================= HEADER ===============================*/
 header {
     width: 100%;
-    padding: 10px;
-    /* Espaciado interno */
-    text-align: center;
-    /* Centrado del texto */
-    top: 0;
+}
+
+/*=== MAIN ===*/
+.primerCuadro {
+    width: 100%;
 }
 
 .barraDeNavegacion {
     display: flex;
     position: relative;
-    box-sizing: border-box;
     width: 100%;
-    background-color: #9663CD;
+    background-color: #9A6CD9;
     border: 4px solid #3e1c8b;
     color: black;
-    padding: 5px;
     align-items: center;
-    font-size: 14px;
-    border-radius: 15px;
+    font-size: 8px;
+    border-radius: 0 15px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
-    /* Agregar sombra */
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.barraDeNavegacion>div {
+    padding: 5px;
+    display: flex;
 }
 
 .logo {
-    position: relative;
-    width: 80px;
-    height: 50px;
-    top: 3px;
-    left: 1em;
+    width: 25%;
+}
+
+#logo {
+    width: 100%;
 }
 
 .links {
-    position: absolute;
-    left: 10em;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
+    width: 70%;
 }
 
 .links>div {
-    /* Ajusta el espacio entre los elementos si es necesario */
-    background-color: #9663CD;
-    font-size: 18px;
-    border-radius: 5px;
+    background-color: #9A6CD9;
     cursor: pointer;
-    float: left;
-    padding: 7px 14px;
-
+    padding: 7px 10px;
+    font-size: 12px;
 }
 
 .links>div:hover {
-    background-color: #3e1c8b;
-    color: white;
+    background-color: #BCA2F2;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 14px;
+    margin: 3px;
+}
+
+.barraBusqueda {
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.iconos {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .busqueda {
-    display: flex;
-    position: absolute;
-    width: 180px;
-    height: 30px;
-    top: 14px;
-    left: 35em;
-    justify-content: end;
+    border: none;
+    width: 100%;
+}
+
+#lupa {
+    font-size: 18px;
 }
 
 .carritoDeCompra {
     display: flex;
-    position: absolute;
-    left: 48em;
-    top: 24px;
+    width: 15%;
+    font-size: 30px;
 }
 
 .usuario {
     display: flex;
-    position: absolute;
-    left: 50em;
-    top: 24px;
+    font-size: 30px;
+    width: 15%;
 }
 
-/*=== MAIN ===*/
-.primerCuadro {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+/*====================================== MAIN ==============================================*/
+main {
     width: 100%;
+    display: block;
+}
+
+.banner {
+    width: 100%;
+    height: 170px;
+}
+
+.encuentraTuLibroAqui {
+    width: 100%;
+    margin: 0;
+}
+
+.bannerencuentraTuLibroAqui {
+    width: 100%;
+    height: 170px;
 }
 
 aside {
-    
-    display: flex;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.6);
-    flex-direction: column;
-    margin: 10px;
-    width: 200px;
-    height: auto;
-    padding: 10px;
-    border-radius: 15px;
-    top: 40px;
-    left: 0px;
-    /* El aside toma una fracción del espacio disponible */
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
-}
-
-/* Estilos para la lista dentro del aside */
-aside ul {
-    list-style: none;
-    padding: 0;
-
-}
-
-aside li {
-    list-style: none;
-    padding: 5px;
-    text-align: left;
-}
-
-aside a {
-    list-style: none;
-    text-decoration: none;
-    color: #333;
+    display: none;
 }
 
 /* Estilos para el artículo */
 article {
-    position: absolute;
-    top: 5px;
-    left: 8%;
+    width: 100%;
+    margin: 0;
 }
 
 /* Estilos para la lista dentro del artículo */
@@ -172,12 +151,12 @@ article a {
 
 .busquedaAlfabeto {
     display: flex;
-    /* Para mostrar los elementos en línea */
-    padding: 0;
+    width: 98%;
+    flex-flow: row wrap;
 }
 
 .busquedaAlfabeto li {
-    margin-right: 10px;
+    margin-right: 6px;
     /* Espacio entre los elementos li */
 }
 
@@ -188,83 +167,253 @@ article a {
 
 .itemsPortada {
     display: flex;
-    position: absolute;
-    border-radius: 25px;
-    margin: 10px;
     flex-flow: row wrap;
-    top: 3em;
-    left: 14em;
+    justify-content: center;
+}
+
+.cajaImagen {
+    width: 30%;
+    height: 40%;
+    background-color: #BCA2F2;
+    margin: 4px;
+    border-radius: 0 5px;
+}
+
+.figure {
+    display: flex;
+    justify-content: center;
 }
 
 .portada {
     display: flex;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 0 25px;
     width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #c0c0c0;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 4);
 }
 
+.botton_titulo {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    background-color: #1C0B59;
+    color: white;
+    border-radius: 10px 10px 0px 0;
+    font-size: 8px;
+}
 
+.tituloPortada {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 8px;
+}
 
-
-
-/*====== FOOTER ======*/
+/*====================================== FOOTER ==============================================*/
 
 footer {
-position: relative;
-background-color: #270b64; /* Color de fondo del footer */
-color: #fff; /* Color del texto del footer */
-width: 100%;
-height: 100%;
-top: 50em;
-
+    background-color: #270b64;
+    width: 100%;
 }
 
-footer> section {
-display: flex;
-
-text-align: center; /* Alineación del texto al centro */
+footer>section {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
 }
-/* Estilo para el contenedor del footer */
+
 .pieDePagina {
-display: flex;
-max-width: 500px; /* Ancho máximo del contenedor */
-margin: 0; /* Centrar el contenedor horizontalmente */
-padding: 10px;
+    width: 100%;
 }
 
-/* Estilo para la lista del footer */
 footer ul {
-list-style: none; /* Eliminar viñetas de la lista */
-padding: 0; /* Eliminar relleno de la lista */
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 
-/* Estilo para los elementos de la lista del footer */
+
 footer ul li {
-display: inline-block; /* Mostrar elementos de la lista en línea */
-margin-right: 10px; /* Espaciado entre elementos de la lista */
+    display: flex;
+    margin: 7px;
 }
 
-/* Estilo para los enlaces de la lista del footer */
 footer ul li a {
-color: #fff; /* Color del texto de los enlaces */
-text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: #fff;
+    text-decoration: none;
 }
-.redesContacto {
-display: flex;
-max-width: 250px; /* Ancho máximo del contenedor */
-padding: 5px;
-position: absolute;
-top: 2em;
-right: 3em;
-}
-.redesContacto > div {
-display: inline-block; /* Mostrar elementos de la lista en línea */
-margin-right: 10px;
 
+.redesContacto {
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.redesContacto>div {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+
+}
+
+/*=============================================================================================================*/
+
+
+@media screen and (max-width: 834px) and (min-width: 320px){
+    .barraDeNavegacion {
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 26%;
+        height: 74px;
+    }
+
+    #logo {
+        width: 77%;
+    }
+
+    .links {
+        width: 72%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .iconos {
+        width: 39%;
+        justify-content: space-evenly;
+        height: 48px;
+    }
+
+    .busqueda {
+        border-radius: 25px;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .bannerencuentraTuLibroAqui {
+        height: 250px;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .busquedaAlfabeto {
+        width: 100%;
+    }
+}
+
+/*=============================================================================================================*/
+
+
+@media screen and (max-width: 1500px) and (min-width: 768px) {
+    .barraDeNavegacion {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 10%;
+        height: 80px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .links {
+        width: 21%;
+    }
+
+
+
+    .links>div {
+        background-color: #9A6CD9;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 19px;
+    }
+
+    .iconos {
+        width: 12%;
+    }
+
+    .barraBusqueda {
+        height: 50px;
+        width: 34%;
+    }
+
+    #lupa {
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    .busqueda {
+        border-radius: 25px;
+    }
+
+    /*===================== main ===========================*/
+
+    .banner {
+        height: 355px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .encuentraTuLibroAqui {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    .bannerencuentraTuLibroAqui {
+        width: 80%;
+        height: 355px;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .busquedaAlfabeto {
+        width: 100%;
+    }
+
+    aside {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        color: black;
+        border-radius: 25px;
+        padding: 23px;
+        text-decoration: none;
+        list-style: none;
+        float: left;
+        font-size: 20px;
+    }
+
+    aside li {
+        text-decoration: none;
+    }
 }
