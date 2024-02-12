@@ -11,9 +11,10 @@
        * Agregar boton de aumentar y disminuir cantidad
 
 ## _3 - Página de Carrito de Compra_:
-
-
-
+      *Modificar los botones
+      *Arreglo en las partes del total
+      *Agregar mas contenido
+      *Mas diamativo para la compra
 
 ## _4 - Página de Registro_:
 
