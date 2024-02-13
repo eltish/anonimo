@@ -17,8 +17,7 @@
       *Mas diamativo para la compra
 
 ## _4 - Página de Registro_:
-
-
-
+      *Modificar el input-label de Correo en CSS
+       para que este quede suspendido al agregar la info.
 
 ## _5 - Página de Login_:
