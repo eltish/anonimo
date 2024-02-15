@@ -1,7 +1,9 @@
 <h1 align="center">Restrospectiva</h1>
 
 ## _1 - Página Home_:
-
+      * Se esta trabajando para que el sitio sea responsive
+      * Agregarle las funcines a cada boton
+      * algo de css a algunos detalles muy importantes 
 
 
 ## _2 - Página Detalle del Producto_:
