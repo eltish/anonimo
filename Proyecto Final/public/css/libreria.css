@@ -78,7 +78,7 @@ header {
 }
 
 .barraBusqueda {
-    width: 60%;
+    width: 100%;
     background-color: white;
     border-radius: 25px;
 }
@@ -133,25 +133,7 @@ main {
     display: block;
 }
 
-.banner {
-    width: 100%;
-    height: 170px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
-.encuentraTuLibroAqui {
-    width: 100%;
-    margin: 0;
-}
-
-.bannerencuentraTuLibroAqui {
-    width: 100%;
-    height: 170px;
-}
-
-aside {
-    display: none;
-}
 
 /* Estilos para el artículo */
 article {
@@ -331,22 +313,8 @@ footer ul li a {
         border-radius: 25px;
     }
 
-    .banner {
-        height: 250px;
-    }
-
-    .bannerencuentraTuLibroAqui {
-        height: 250px;
-    }
-
-    article {
-        display: flex;
-        justify-content: center;
-    }
-
-    .busquedaAlfabeto {
-        width: 100%;
-    }
+    
+  
 }
 
 /*=============================================================================================================*/
@@ -359,7 +327,7 @@ footer ul li a {
     }
 
     .logo {
-        width: 10%;
+        width: 100%;
         height: 100px;
     }
 
@@ -370,7 +338,6 @@ footer ul li a {
     .links {
         width: 21%;
     }
-
 
 
     .links>div {
@@ -398,63 +365,4 @@ footer ul li a {
         border-radius: 25px;
     }
 
-    /*===================== main ===========================*/
-
-    .banner {
-        height: 355px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .encuentraTuLibroAqui {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        display: flex;
-    }
-
-    .bannerencuentraTuLibroAqui {
-        width: 80%;
-        height: 355px;
-    }
-
-    article {
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-    }
-
-    .busquedaAlfabeto {
-        width: 100%;
-    }
-
-    aside {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        width: 15%;
-        color: black;
-        border-radius: 25px;
-        padding: 23px;
-        text-decoration: none;
-        list-style: none;
-        float: left;
-        font-size: 20px;
-    }
-
-    aside li {
-        text-decoration: none;
-    }
-
-    .cajaImagen {
-        width: 30%;
-    }
-
-    .tituloPortada {
-        font-size: 20px;
-        margin: 0;
-    }
-    footer ul {
-        font-size: 25px;
-    }
 }

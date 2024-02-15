@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+header a{
+    color: black;
+}
+
+
+/*================================= HEADER ===============================*/
+header {
+    width: 100%;
+}
+
+/*=== MAIN ===*/
+
+
+.barraDeNavegacion {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #9A6CD9;
+    border: 4px solid #3e1c8b;
+    color: black;
+    align-items: center;
+    font-size: 8px;
+    border-radius: 0 15px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.barraDeNavegacion>div {
+    padding: 5px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+}
+
+#logo {
+    width: 100%;
+}
+
+.links {
+    width: 70%;
+}
+
+.links>div {
+    background-color: #9A6CD9;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.links>div:hover {
+    background-color: #BCA2F2;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 14px;
+    margin: 3px;
+}
+
+
+
+.iconos {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.busqueda {
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.carritoDeCompra {
+    display: flex;
+    width: 15%;
+    font-size: 30px;
+}
+
+#numero{
+    padding: 10px;
+    background-color: #3e1c8b; 
+    color: white;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    position: relative;
+    top: -45px;
+    left: 25px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.usuario {
+    display: flex;
+    font-size: 30px;
+    width: 15%;
+}
+
+
+
+body {  
+    background-image: url('../images/5471985.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-position: top; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Cambiar el color del texto a blanco */
+    font-family: Arial, sans-serif; /* Cambiar la fuente del texto */
+    margin: auto 0;
+}
+
+
+/* MAIN */
+.container-form{
+    margin: auto 0;
+}
+
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+.container-form .enlaces{
+    margin-top: -25px;
+    margin-bottom: 15px;
+    
+}
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin: 5px;
+    color: white;
+    font-weight: 700px;
+    
+}
+
+.container-form a i{
+    color: white;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+    display: flex;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #9A6CD9;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+
+.container-form form .campo{
+    max-width: 90%;
+}
+
+.container-form form textarea{
+    max-width: 90%;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: azure;
+    color: #9A6CD9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin: 10px;
+}
+
+.container-form .btn-enviar:hover{
+    background-color: #9A6CD9;
+    color: white;
+}
+
+
+
+
+footer {
+    background-color: #270b64;
+    width: 100%;
+}
+
+footer>section {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.pieDePagina {
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+footer ul li {
+    display: flex;
+    margin: 7px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redesContacto {
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.redesContacto>div {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+
+}
+
+@media screen and (min-width: 768px){
+
+
+    @media screen and (max-width: 3000px) and (min-width: 768px) {
+        .barraDeNavegacion {
+            padding: 0;
+            justify-content: space-evenly;
+        }
+    
+        .logo {
+            width: 100%;
+            height: 100px;
+        }
+    
+        #logo {
+            width: 98%;
+        }
+    
+        .links {
+            width: 21%;
+        }
+    
+    
+        .links>div {
+            background-color: #9A6CD9;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-size: 30px;
+        }
+    
+        .iconos {
+            width: 12%;
+        }
+    
+        .barraBusqueda {
+            height: 50px;
+            width: 34%;
+        }
+    
+        #lupa {
+            font-size: 23px;
+            padding: 10px;
+        }
+    
+        .busqueda {
+            border-radius: 25px;
+        }
+    
+.container-form{
+    display: flex;
+    margin: 40px;
+    padding: 35px;
+    
+}
+
+.container-form p{
+    margin: 15px;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.container-form .formulario{
+    width: 100%;
+}
+
+.barraDeNavegacion {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    align-items: center; /* Centra verticalmente los elementos */
+    color: black; /* Color del texto */
+
+    
+}
+
+header .barraDeNavegacion a{
+    color: black;
+}
+
+
+    
+}
+}
