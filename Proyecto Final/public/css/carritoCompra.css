@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
 body {
@@ -12,12 +13,92 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header a{
+    color: black;
+}
+
+
+
+#cart {
+    margin: 10px auto;
+    width: 1330px;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+th, td{
+    border: solid 1px blanchedalmond;
+    padding: 10px;
+}
+
+thead{
+    background-color: rgb(139, 37, 37);
+    border-bottom: solid 5px;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #3331ce;
+}
+
+tr:hover td{
+    background-color: rgb(141, 52, 52);
+    color: white;
+}
+
+#promo{
+    padding: 10px;
+}
+
+#canje{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #812626;
+    color: #fff;
+    border: #fff;
+    cursor: pointer;   
+    font-weight: bold;
+    border: 3px solid blanchedalmond;
+    border-radius: 25px;
+}
+
+#canje:hover {
+    background-color: #ebeef1;
+    color: #812626;
+}
+
+#total{
+    margin: 0px auto;
+    width: 400px;
+}
+
+#checkout-btn {
+    margin-top: 5px;
+    padding: 20px;
+    background-color: #812626;
+    color: #fff;
+    border: #fff;
+    cursor: pointer;    
+    font-weight: bold;
+    border: 3px solid blanchedalmond;
+    border-radius: 25px;
+}
+
+#checkout-btn:hover {
+    background-color: #ebeef1;
+    color: #812626;
+}
+
 /*================================= HEADER ===============================*/
 header {
     width: 100%;
 }
 
-/*=== MAIN ===*/
+/*===-------------------------------------------------------- MAIN ---------------------------------------===*/
 .primerCuadro {
     width: 100%;
 }
@@ -72,7 +153,7 @@ header {
 }
 
 .barraBusqueda {
-    width: 60%;
+    width: 100%;
     background-color: white;
     border-radius: 25px;
 }
@@ -98,6 +179,23 @@ header {
     font-size: 30px;
 }
 
+#numero1{
+    padding: 10px;
+    background-color: #3e1c8b; 
+    color: white;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    position: relative;
+    top: -45px;
+    left: 25px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
 .usuario {
     display: flex;
     font-size: 30px;
@@ -110,24 +208,7 @@ main {
     display: block;
 }
 
-.banner {
-    width: 100%;
-    height: 170px;
-}
 
-.encuentraTuLibroAqui {
-    width: 100%;
-    margin: 0;
-}
-
-.bannerencuentraTuLibroAqui {
-    width: 100%;
-    height: 170px;
-}
-
-aside {
-    display: none;
-}
 
 /* Estilos para el artículo */
 article {
@@ -211,14 +292,18 @@ article a {
     display: flex;
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.tituloPortada a{
+    color: white;
 }
 
 
 /*=============================================================================================================*/
 
 
-@media screen and (max-width: 834px) and (min-width: 320px) {
+@media screen and (max-width: 834px) and (min-width: 768px) {
     .barraDeNavegacion {
         justify-content: space-around;
     }
@@ -249,22 +334,8 @@ article a {
         border-radius: 25px;
     }
 
-    .banner {
-        height: 250px;
-    }
-
-    .bannerencuentraTuLibroAqui {
-        height: 250px;
-    }
-
-    article {
-        display: flex;
-        justify-content: center;
-    }
-
-    .busquedaAlfabeto {
-        width: 100%;
-    }
+    
+  
 }
 
 /*=============================================================================================================*/
@@ -277,7 +348,7 @@ article a {
     }
 
     .logo {
-        width: 10%;
+        width: 100%;
         height: 100px;
     }
 
@@ -288,7 +359,6 @@ article a {
     .links {
         width: 21%;
     }
-
 
 
     .links>div {
@@ -316,71 +386,60 @@ article a {
         border-radius: 25px;
     }
 
-    /*===================== main ===========================*/
-
-    .banner {
-        height: 355px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .encuentraTuLibroAqui {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        display: flex;
-    }
-
-    .bannerencuentraTuLibroAqui {
-        width: 80%;
-        height: 355px;
-    }
-
-    article {
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-    }
-
-    .busquedaAlfabeto {
-        width: 100%;
-    }
-
-    aside {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        width: 15%;
-        color: black;
-        border-radius: 25px;
-        padding: 23px;
-        text-decoration: none;
-        list-style: none;
-        float: left;
-        font-size: 20px;
-    }
-
-    aside li {
-        text-decoration: none;
-    }
-
-    .cajaImagen {
-        width: 30%;
-    }
-
-    .tituloPortada {
-        font-size: 30px;
-        margin: 0;
-    }
-    footer ul {
-        font-size: 25px;
-    }
 }
 
-.tablaDeProductos {
+/*====================================== FOOTER ==============================================*/
+
+footer {
+    background-color: #270b64;
     width: 100%;
-    border-collapse: collapse;
-    padding: auto;
-    margin: auto;
+    margin: 10px;
 }
 
+footer>section {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.pieDePagina {
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+footer ul li {
+    display: flex;
+    margin: 7px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redesContacto {
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+.redesContacto>div {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+
+}

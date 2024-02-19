@@ -1,112 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRITO DE COMPRA</title>
-    <link rel="stylesheet" href="../../public/css/carritoCompra.css">
+    <title>Carrito de Compra</title>
     <script src="https://kit.fontawesome.com/82af38c790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../public/css/carritoCompra.css">
 </head>
+
 <body>
     <header>
         <div class="barraDeNavegacion">
-            <div class="logo">
-                <img id="logo" src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa">
+            <div>
+                <img src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa" class="logo">
             </div>
             <div class="links">
-                <div class="inicio"><a href="./index.html"> Inicio </a></div>
-                <div class="libreria"><a href="./libreria.html">Libreria</a></div>
-                <div class="contacto"><a href="./contacto.html">Contacto</a></div>
+                <div class="inicio"><a href="./index.html">Inicio</a></div>
+                <div class="libreria"><a href="./libreria.html">Libreria</div></a>
+                <div class="contacto"><a href="./contacto.html">Contacto</div></a>
             </div>
-            <div class="barraBusqueda">
-                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
-                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar..." class="busqueda">
+            <div>
+                <div>
+                     <input type="text" name="busqueda" placeholder=" Buscar..." class="busqueda"></i>
+                </div>
+            </div>
+            <div>
+                <a href="productCart.html"><div class="carritoDeCompra"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div id="numero">0</div> </a>
+               
+            </div>
+            <div>
+                <a href="./login.html"><div class="usuario"><i class="fa-solid fa-user"></i></a></div>
+            </div></a>
 
-            </div>
-            <div class="iconos">
-                <div class="carritoDeCompra">
-                    <div><a href="./productCart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-                <div class="usuario">
-                    <div><a href="./login.html"><i class="fa-solid fa-user"></i></a></div>
-                </div>
-            </div>
-<br>
-<br>
         </div>
     </header>
-        <br>
+    <br>
 
-        <h1>CARRITO DE COMPRA</h1>
-        
-        <br>
-
-        <table class="tablaDeProductos">
+    <center><h1>Carrito de Compras</h1></center>
+    <div id="cart">
+        <table>
             <thead>
                 <tr>
-                    <th><h2>PRODUCTOS</h2></th>
-                    <th><h2>PRECIO</h2></th>
-                    <th><h2>CANTIDAD</h2></th>
-                    <th><h2>SUBTOTAL</h2></th>
+                    <th>PRODUCTOS</th><th>PRECIO</th><th>CANTIDAD</th><th>SUBTOTAL</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
-                    <td><h3>$16.00</h3></td>
-                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
-                    <td><h3>$16.00</h3></td>
-                </tr>
-                <tr>
-                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
-                    <td><h3>$20.00</h3></td>
-                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
-                    <td><h3>$20.00</h3></td>
-                </tr>
-                <tr>
-                    <td><img class="portada" src="../../public/images/image_icon-icons.com_50366.png" alt="portada"> <h2>Titulo</h2> </td>
-                    <td><h3>$60.00</h3></td>
-                    <td><textarea name="texto" rows="1" cols="5"></textarea></td>
-                    <td><h3>$60.00</h3></td>
-                </tr>
-            </tbody>
+            <tr>
+                
+                <td><button class="remove-item">x</button><img src="../../public/images/Libro Boulevard.jpg" alt="portada" width="85" height="95"><center>Boulevard</center></td><td><center>$16.00</center></td><td><center><input type="number" id="numero" name="numero" min="0" max="15" value="1""></td><td><center>16.00</td>
+            </tr>
+            <tr>
+                <td><button class="remove-item">x</button><img src="../../public/images/Libro El Diario de Ana Frank.jpg" alt="portada"" width="85" height="95"><center>El Diario de Ana Frank</center></td><td><center>$20.00</center></td><td><center><input type="number" id="numero" name="numero" min="0"max="15" value="1"></td><td><center>$20.00</td>
+            </tr>
         </table>
-        <br>
-        
+    </div>
+    <div id="promo">
+        <h5>CODIGO PROMOCIONAL</h5>
+        <input type="number" id="numero" name="numero" min="0">
+        <button id="canje">CANJEAR</button>
+    </div>
+    <div id="total">
+        <table>
+            <tr>
+              <td>SUBTOTAL</td>
+              <td>$36.00</td>
+            </tr>
+            <tr>
+              <td>TOTAL</td>
+              <td>$36.00</td>
+            </tr>
+        </table>
+        <center><button id="checkout-btn" ><center>PAGAR</button>
+    </div>
 
-        <h5>
-        <p style="text-align: left;">Codigo Promocional.</p>
-        </h5>
-
-        <tabla class="tablaPromocional">
-            <thead>
-                <tr>
-                    <th>
-                    <p style="text-align: left;">
-                        <textarea name="texto" rows="1" cols="20"></textarea>
-                        <button>CANJEAR</button>
-                    </p>
-
-                    </th>
-                    <th>
-                    <p style="text-align: right;"> <td>SUBTOTAL</td> <td>$36.00</td>
-                    </p>
-                    </th>
-
-                    <th>
-                        <p style="text-align: right;"> <td>TOTAL</td> <td>$36.00</td>   
-                        </p>                    
-                    </th>
-
-                    <th>
-                        <p style="text-align: right;">
-                        <button>PAGAR</button>
-                        </p>
-                    </th>
-
-                </tr>
-            </thead>
-        </tabla>
+    <footer>
+        <section>
+            <div class="pieDePagina">
+                <ul>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">librerias</a>librerias</li>
+                    <li><a href="#">facturacion</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">institucional</a></li>
+                    <li><a href="#">Proteccion de datos Personales</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <br>
 </body>
+
 </html>
