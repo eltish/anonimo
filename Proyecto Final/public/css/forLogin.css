@@ -101,7 +101,7 @@ input:valid ~ label{
     position: absolute;
     color: #fff;
     font-size: 1.6rem;
-    top: 3px;
+    top: px;
     right: 3px;
 }
 
@@ -171,6 +171,15 @@ button:hover{
 .remember-forgot label input{
     color: #fff;
     margin-right: 5px;
+
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #f6f5f5;
+    padding-top: 10px;
 
 }
 
