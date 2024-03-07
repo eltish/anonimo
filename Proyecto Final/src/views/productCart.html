@@ -12,34 +12,34 @@
 <body>
     <header>
         <div class="barraDeNavegacion">
-            <div>
-                <img src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa" class="logo">
+            <div class="logo">
+                <a href=""><img id="logo" src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa"></a>
             </div>
             <div class="links">
-                <div class="inicio"><a href="./index.html">Inicio</a></div>
-                <div class="libreria"><a href="./libreria.html">Libreria</div></a>
-                <div class="contacto"><a href="./contacto.html">Contacto</div></a>
+                <div class="inicio"><a href="./index.html"> Inicio </a></div>
+                <div class="libreria"><a href="./libreria.html">Librería</a></div>
+                <div class="contacto"><a href="./contacto.html">Contacto</a></div>
             </div>
-            <div>
-                <div>
-                     <input type="text" name="busqueda" placeholder=" Buscar..." class="busqueda"></i>
+            <div class="barraBusqueda">
+                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar..." class="busqueda">
+
+            </div>
+            <div class="iconos">
+                <div class="carritoDeCompra">
+                    <div><a href="./productCart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div id="numero1">0</div> </a>  
+                    </div>
+                </div>
+                <div class="usuario">
+                    <div><a href="./login.html"><i class="fa-solid fa-user"></i></a></div>
                 </div>
             </div>
-            <div>
-                <a href="productCart.html"><div class="carritoDeCompra"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div id="numero">0</div> </a>
-               
-            </div>
-            <div>
-                <a href="./login.html"><div class="usuario"><i class="fa-solid fa-user"></i></a></div>
-            </div></a>
-
-        </div>
     </header>
     <br>
-
+    
     <center><h1>Carrito de Compras</h1></center>
-    <div id="cart">
+    <p class="carrito-vacio">Tu carrito está vacio <i class="fa-solid fa-face-sad-tear"></i></p>
         <table>
             <thead>
                 <tr>
@@ -48,10 +48,10 @@
             </thead>
             <tr>
                 
-                <td><button class="remove-item">x</button><img src="../../public/images/Libro Boulevard.jpg" alt="portada" width="85" height="95"><center>Boulevard</center></td><td><center>$16.00</center></td><td><center><input type="number" id="numero" name="numero" min="0" max="15" value="1""></td><td><center>16.00</td>
-            </tr>
+                <td><button class="remove-item">x</button><img class="carrito-producto-imagen" src="../../public/images/Libro Boulevard.jpg" alt="portada" width="85" height="95"><center>Boulevard</center></td><td><center>$16.00</center></td><td><center><input type="number" id="numero" name="numero" min="0" max="15" value="1""></td><td><center>16.00</td>
+            </tr> 
             <tr>
-                <td><button class="remove-item">x</button><img src="../../public/images/Libro El Diario de Ana Frank.jpg" alt="portada"" width="85" height="95"><center>El Diario de Ana Frank</center></td><td><center>$20.00</center></td><td><center><input type="number" id="numero" name="numero" min="0"max="15" value="1"></td><td><center>$20.00</td>
+                <td><button class="remove-item">x</button><img class="carrito-producto-imagen" src="../../public/images/Libro El Diario de Ana Frank.jpg" alt="portada"" width="85" height="95"><center>El Diario de Ana Frank</center></td><td><center>$20.00</center></td><td><center><input type="number" id="numero" name="numero" min="0"max="15" value="1"></td><td><center>$20.00</td>
             </tr>
         </table>
     </div>

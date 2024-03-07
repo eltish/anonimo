@@ -242,6 +242,22 @@ article a {
     color: white;
 }
 
+.loMasVendido h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding: 24px;
+    opacity: .9;
+    /* -webkit-text-stroke: 1px rgb(39, 11, 99, 0.6)  ; Para navegadores webkit (Chrome, Safari, etc.) */
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+    background-color: #9A6CD9;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 2px 25px rgba(217, 92, 255, 0.628);;
+}
+
+
 /*====================================== FOOTER ==============================================*/
 
 footer {

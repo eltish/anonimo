@@ -12,12 +12,13 @@ header a{
 
 
 /*================================= HEADER ===============================*/
-header {
-    width: 100%;
+header a{
+    color: black;
 }
 
-/*=== MAIN ===*/
-
+.primerCuadro {
+    width: 100%;
+}
 
 .barraDeNavegacion {
     display: flex;
@@ -68,7 +69,11 @@ header {
     margin: 3px;
 }
 
-
+.barraBusqueda {
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+}
 
 .iconos {
     width: 30%;
@@ -79,9 +84,11 @@ header {
 .busqueda {
     border: none;
     width: 100%;
-    border-radius: 25px;
 }
 
+#lupa {
+    font-size: 18px;
+}
 
 .carritoDeCompra {
     display: flex;
@@ -111,7 +118,6 @@ header {
     font-size: 30px;
     width: 15%;
 }
-
 
 
 body {  
@@ -266,50 +272,50 @@ footer ul li a {
 @media screen and (min-width: 768px){
 
 
-    @media screen and (max-width: 3000px) and (min-width: 768px) {
-        .barraDeNavegacion {
-            padding: 0;
-            justify-content: space-evenly;
-        }
-    
-        .logo {
-            width: 100%;
-            height: 100px;
-        }
-    
-        #logo {
-            width: 98%;
-        }
-    
-        .links {
-            width: 21%;
-        }
-    
-    
-        .links>div {
-            background-color: #9A6CD9;
-            cursor: pointer;
-            padding: 10px 15px;
-            font-size: 30px;
-        }
-    
-        .iconos {
-            width: 12%;
-        }
-    
-        .barraBusqueda {
-            height: 50px;
-            width: 34%;
-        }
-    
-        #lupa {
-            font-size: 23px;
-            padding: 10px;
-        }
-    
-        .busqueda {
-            border-radius: 25px;
-        }
+    .barraDeNavegacion {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 10%;
+        height: 100px;
+    }
+
+    #logo {
+        width: 98%;
+    }
+
+    .links {
+        width: 21%;
+    }
+
+
+
+    .links>div {
+        background-color: #9A6CD9;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 30px;
+    }
+
+    .iconos {
+        width: 12%;
+    }
+
+    .barraBusqueda {
+        height: 50px;
+        width: 34%;
+    }
+
+    #lupa {
+        font-size: 23px;
+        padding: 10px;
+    }
+
+    .busqueda {
+        border-radius: 25px;
+    }
     
 .container-form{
     display: flex;
@@ -349,4 +355,4 @@ header .barraDeNavegacion a{
 
     
 }
-}
+
