@@ -13,10 +13,122 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Encabezado */
 header a{
     color: black;
 }
 
+.primerCuadro {
+    width: 100%;
+}
+
+.barraDeNavegacion {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #9A6CD9;
+    border: 4px solid #3e1c8b;
+    color: black;
+    align-items: center;
+    font-size: 8px;
+    border-radius: 0 15px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+    flex-flow: row wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.barraDeNavegacion>div {
+    padding: 5px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+}
+
+#logo {
+    width: 100%;
+}
+
+.links {
+    width: 70%;
+}
+
+.links>div {
+    background-color: #9A6CD9;
+    cursor: pointer;
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.links>div:hover {
+    background-color: #BCA2F2;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px 14px;
+    margin: 3px;
+}
+
+.barraBusqueda {
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.iconos {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.busqueda {
+    border: none;
+    width: 100%;
+}
+
+#lupa {
+    font-size: 18px;
+}
+
+.carritoDeCompra {
+    display: flex;
+    width: 15%;
+    font-size: 30px;
+}
+
+#numero1{
+    padding: 10px;
+    background-color: #3e1c8b; 
+    color: white;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    position: relative;
+    top: -45px;
+    left: 25px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.usuario {
+    display: flex;
+    font-size: 30px;
+    width: 15%;
+}
+
+
+
+
+/* ######################### CARRITO DE COMPRA ######################### */
+.carrito-vacio{
+    color: var(--clr-main);
+    display: none;   
+}
 
 
 #cart {
@@ -93,211 +205,6 @@ tr:hover td{
     color: #812626;
 }
 
-/*================================= HEADER ===============================*/
-header {
-    width: 100%;
-}
-
-/*===-------------------------------------------------------- MAIN ---------------------------------------===*/
-.primerCuadro {
-    width: 100%;
-}
-
-.barraDeNavegacion {
-    display: flex;
-    position: relative;
-    width: 100%;
-    background-color: #9A6CD9;
-    border: 4px solid #3e1c8b;
-    color: black;
-    align-items: center;
-    font-size: 8px;
-    border-radius: 0 15px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
-    flex-flow: row wrap;
-    padding: 10px;
-    justify-content: center;
-}
-
-.barraDeNavegacion>div {
-    padding: 5px;
-    display: flex;
-}
-
-.logo {
-    width: 25%;
-}
-
-#logo {
-    width: 100%;
-}
-
-.links {
-    width: 70%;
-}
-
-.links>div {
-    background-color: #9A6CD9;
-    cursor: pointer;
-    padding: 7px 10px;
-    font-size: 12px;
-}
-
-.links>div:hover {
-    background-color: #BCA2F2;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 7px 14px;
-    margin: 3px;
-}
-
-.barraBusqueda {
-    width: 100%;
-    background-color: white;
-    border-radius: 25px;
-}
-
-.iconos {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.busqueda {
-    border: none;
-    width: 100%;
-}
-
-#lupa {
-    font-size: 18px;
-}
-
-.carritoDeCompra {
-    display: flex;
-    width: 15%;
-    font-size: 30px;
-}
-
-#numero1{
-    padding: 10px;
-    background-color: #3e1c8b; 
-    color: white;
-    border-radius: 100%;
-    width: 10px;
-    height: 10px;
-    font-size: 10px;
-    position: relative;
-    top: -45px;
-    left: 25px;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
-
-.usuario {
-    display: flex;
-    font-size: 30px;
-    width: 15%;
-}
-
-/*====================================== MAIN ==============================================*/
-main {
-    width: 100%;
-    display: block;
-}
-
-
-
-/* Estilos para el artículo */
-article {
-    width: 100%;
-    margin: 0;
-}
-
-/* Estilos para la lista dentro del artículo */
-article ul {
-    list-style: none;
-    padding: 0;
-}
-
-article li {
-    padding: 2px;
-}
-
-article a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.busquedaAlfabeto {
-    display: flex;
-    width: 98%;
-    flex-flow: row wrap;
-}
-
-.busquedaAlfabeto li {
-    margin-right: 6px;
-    /* Espacio entre los elementos li */
-}
-
-.busquedaAlfabeto a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.itemsPortada {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.cajaImagen {
-    width: 30%;
-    height: 40%;
-    background-color: #BCA2F2;
-    margin: 4px;
-    border-radius: 0 5px;
-}
-
-.figure {
-    display: flex;
-    justify-content: center;
-}
-
-.portada {
-    display: flex;
-    box-sizing: border-box;
-    border-radius: 0 25px;
-    width: 100px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 4);
-}
-
-.botton_titulo {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    justify-content: center;
-    text-align: center;
-    background-color: #1C0B59;
-    color: white;
-    border-radius: 10px 10px 0px 0;
-    font-size: 40px;
-}
-
-.tituloPortada {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    color: white;
-    font-size: 15px;
-}
-
-.tituloPortada a{
-    color: white;
-}
 
 
 /*=============================================================================================================*/
@@ -305,29 +212,44 @@ article a {
 
 @media screen and (max-width: 834px) and (min-width: 768px) {
     .barraDeNavegacion {
-        justify-content: space-around;
+        padding: 0;
+        justify-content: space-evenly;
     }
 
     .logo {
-        width: 26%;
-        height: 74px;
+        width: 10%;
+        height: 100px;
     }
 
     #logo {
-        width: 77%;
+        width: 98%;
     }
 
     .links {
-        width: 72%;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        width: 21%;
+    }
+
+
+
+    .links>div {
+        background-color: #9A6CD9;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 30px;
     }
 
     .iconos {
-        width: 39%;
-        justify-content: space-evenly;
-        height: 48px;
+        width: 12%;
+    }
+
+    .barraBusqueda {
+        height: 50px;
+        width: 34%;
+    }
+
+    #lupa {
+        font-size: 23px;
+        padding: 10px;
     }
 
     .busqueda {
@@ -348,7 +270,7 @@ article a {
     }
 
     .logo {
-        width: 100%;
+        width: 10%;
         height: 100px;
     }
 
@@ -359,6 +281,7 @@ article a {
     .links {
         width: 21%;
     }
+
 
 
     .links>div {

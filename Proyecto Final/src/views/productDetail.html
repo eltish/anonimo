@@ -9,32 +9,62 @@
     <link rel="stylesheet" href="../../public/css/detalleProducto.css">
 </head>
 
-<body>
+<body>        
+       
     <header>
         <div class="barraDeNavegacion">
-            <div>
-                <a href="./index.html"><img src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa" class="logo"></a>
+            <div class="logo">
+                <a href="./index.html"><img id="logo" src="../../public/images/logo  libreria anonymous blanco.png" alt="Logo de la empresa"></a>
             </div>
             <div class="links">
-                <div class="inicio"><a href="./index.html">Inicio</a></div>
-                <div class="libreria"><a href="./libreria.html">Libreria</a></div>
+                <div class="inicio"><a href="./index.html"> Inicio </a></div>
+                <div class="libreria"><a href="./libreria.html">Librería</a></div>
                 <div class="contacto"><a href="./contacto.html">Contacto</a></div>
             </div>
-            <div>
-                <div>
-                     <input type="text" name="busqueda" placeholder=" Buscar..." class="busqueda"></i>
+            <div class="barraBusqueda">
+                <i class="fa-solid fa-magnifying-glass" id="lupa"></i>
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar..." class="busqueda">
+
+            </div>
+            <div class="iconos">
+                
+                <div class="carritoDeCompra">
+                    <div class="container-cart-icon">
+                        <div><i class="fa-solid fa-cart-shopping"></i>
+                            <div id="numero">0</div>
+                        </div>  
+                    </div>
+
+                    <div class="container-cart-products 
+                    hidden-cart">
+                        <div class="fila-producto">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito"></span>
+                                    <p id="titulo-producto-carrito"></p>
+                                    <span class="precio-producto-carrito"></span>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-total">
+                            <h3>Total:</h3>
+                            <span class="total-pagar">$0.00</span>
+					    </div>
+                        <p class="cart-empty">El carrito está vacío</p>
+                        <p class="irAlCarrito"><a href="./productCart.html">ir al carrito>>></a></p>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="usuario">
+                    <div><a href="./login.html"><i class="fa-solid fa-user"></i></a></div>
                 </div>
             </div>
-            <div>
-                <a href="productCart.html"><div class="carritoDeCompra"><i class="fa-solid fa-cart-shopping"></i></div>
-                <div id="numero">0</div> </a>
-               
-            </div>
-            <div>
-                <div class="usuario"><i class="fa-solid fa-user"></i></a></div>
-            </div>
+            
 
-        </div>
     </header>
     <br>
 
@@ -59,11 +89,16 @@
                             </p>
                     <br>
                         
-                <div class="botonAgregarAlCarrito"><button>AGREGAR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button></div>
+                <button class="botonAgregarAlCarrito">AGREGAR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                         
                 <br>
-                <h3 class="precio">Precio: $27.99</h3>
-                <h3 class="añadirFavorito">AÑADIR A FAVORITO <i class="fa-regular fa-heart"></i></h3>
+                <h2>Precio:</h2>
+                <h3 class="precio">$27.99</h3>
+                
+                
+									
+
+                <h3 class="añadirFavorito">AÑADIR A FAVORITO <i class="fa-solid fa-heart" id="added-favorite"></i></h3>
 
                 <h2 class="subTitulo">MÉTODO DE ENVÍO</h2>
                             <p class="textoMetodoEnvio">Método de Envío... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum totam labore eius! Similique blanditiis tenetur repudiandae, tempore numquam aut provident neque dignissimos aliquam est voluptatibus atque deleniti nihil magni.
@@ -74,6 +109,100 @@
             </section>
         </div>
         
+        <div class="Carrusel">
+            <h2>Quizás también te guste</h2>
+            <div class="slick-list" id="slick-list">
+                <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <div class="slick-track" id="track">
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/De Lukov, con amor.jpeg" alt="De Lukov, con amor">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/Libro El Diario de Ana Frank.jpg" alt="El Diario de Ana Frank">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                               
+                                <picture>
+                                    <img src="../../public/images/Libro Lascivia.jpg" alt="Lascivia">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/Portada del Libro Cada Niña que murio.jpg" alt="Cada Niña que murio">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                               
+                                <picture>
+                                    <img src="../../public/images/Portada del Libro Cinder.jpeg" alt="Cinder">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/Portada del Libro de Actividades para preescolar.jpg" alt="Actividades para preescolar">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/Portada del Libro No es lo que parece.jpg" alt="No es lo que parece">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="slick">
+                        <div>
+                            <a href="">
+                                
+                                <picture>
+                                    <img src="../../public/images/Portada del Libro Winter.jpeg" alt="Winter">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
 
     </main>
     <footer>
@@ -81,7 +210,7 @@
             <div class="pieDePagina">
                 <ul>
                     <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                     <li><a href="#">librerias</a>librerias</li>
                     <li><a href="#">facturacion</a></li>
                     <li><a href="#">Terminos y condiciones</a></li>
@@ -97,6 +226,7 @@
             </div>
         </section>
     </footer>
+    <script src="../../public/js/detalleProducto.js"></script>
 </body>
 
 </html>
