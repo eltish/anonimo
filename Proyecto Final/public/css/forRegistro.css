@@ -60,6 +60,23 @@ input:valid ~ label{
     top: -5px;
 }
 
+.input-contenedor small {
+    color: rgb(210, 87, 81);
+    position: relative;
+    bottom: -19px;
+    left: 0;
+    visibility: hidden;
+    
+}
+
+.input-contenedor.error small {
+    visibility: visible
+}
+
+
+
+
+
 .input-contenedor input {
     width: 99%;
     height: 30px;
@@ -75,9 +92,16 @@ input:valid ~ label{
     position: absolute;
     color: #fff;
     font-size: 1.6rem;
-    top: 3px;
+    top: 1px;
     right: 3px;
 }
+
+
+    
+
+
+
+
 
 
 
@@ -120,3 +144,14 @@ button:hover{
 .registrar p a:hover {
     text-decoration: underline;
 }
+
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #f6f5f5;
+    padding-top: 10px;
+
+}
+

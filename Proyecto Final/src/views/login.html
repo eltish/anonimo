@@ -13,39 +13,48 @@
     <section>
         <div class="contenedor">
             <div class="formulario">
-                <form action="#">
-                    <h1>BIENVENIDO</h1>
+                <form action="" method="POST" id="form">
+                    <div class="form">
+                        <h1>BIENVENIDO</h1>
+                    
+                     <div class="input-contenedor">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="Usuario" required id="name" name="name" autocomplete="username">
+                      <label for="name">USUARIO</label>
+                     </div>
 
-                    <div class="input-contenedor">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="Usuario" required>
-                        <label for="#">USUARIO</label>
-                    </div>
-                
-
-                    <div class="input-contenedor">
+                     <div class="input-contenedor">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" required>
-                        <label for="#">CONTRASEÑA</label>
+                        <input type="password" required id="password" name="password">
+                        <label for="password">CONTRASEÑA</label>
+                     </div>
                     </div>
-
+            
                 </form>
                 
-                <div class="remember-forgot">
+                   <div class="remember-forgot">
                     <label><input type="checkbox">Recuerdame</label>
                     <a href="#">¿Perdiste tu contraseña?</a>
-                </div>
+                   </div>
+
                 <div>
-                    <button>Entrar</button>
+                    <button onclick="loguear()">Entrar</button>
 
                     <div class="registrar">
                         <p>¿No tienes cuenta? <a href="./register.html"> Registrate</a></p>
 
                     </div>
+
+                    
                 </div>
+
+                
+            
             </div>
         </div>
     </section>
     
+    <script src="../login.js"></script>
+
 </body>
 </html>

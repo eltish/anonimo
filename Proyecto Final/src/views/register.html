@@ -13,40 +13,47 @@
     <section>
         <div class="contenedor">
             <div class="formulario">
-                <form action="#">
-                    <h1>REGISTRO</h1>
+                <form action="" method="POST" id="form">
+                    <div class="form">
+                      <h1>REGISTRO</h1>
 
-                    <div class="input-contenedor">
+                     <div class="input-contenedor">
                         <i class="fa-solid fa-user"></i>
-                        <input type="Usuario" required>
-                        <label for="#">NOMBRE</label>
-                    </div>
+                        <input type="Usuario" required id="name"  autocomplete="username" />
+                        <label for="name">NOMBRE</label>
+                     </div>
+                     
 
-                    <div class="input-contenedor">
+                     <div class="input-contenedor">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" required>
-                        <label for="#">CORREO</label>
+                        <input type="email" required id="email" name="email" autocomplete="on" />
+                        <label for="email">CORREO</label>
+                     </div>
+
+                     <div class="input-contenedor">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" required id="password" name="password">
+                        <label for="password">CONTRASEÑA</label>
+                     </div>
+                    </div> 
+                   
+                    <div>
+                        <button>Registrate</button>
+    
+                        <div class="registrar">
+                            <p>Ya eres miembro? <a href="./login.html"> Inicia tu sesión</a></p>
+                            
+                        </div>
                     </div>
 
-                    <div class="input-contenedor">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="password" required>
-                        <label for="#">CONTRASEÑA</label>
-                    </div>
+                    <p class="warnings" id="warnings"></p>
 
                 </form>
-                
-                <div>
-                    <button>Registrate</button>
 
-                    <div class="registrar">
-                        <p>Ya eres miembro? <a href="./login.html"> Inicia tu sesión</a></p>
-
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    
+
+    <script src="../registro.js"></script>
 </body>
 </html>
