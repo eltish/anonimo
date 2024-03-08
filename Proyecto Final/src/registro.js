@@ -12,7 +12,7 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     parrafo.innerHTML = "";
     
-    if(nombre.value.length <6 ){
+    if(nombre.value.length <10 ){
         warnings += 'El nombre no es valido <br>'
         entrar = true
     }
